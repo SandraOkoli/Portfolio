@@ -5,13 +5,13 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import './scss/style.scss';
 
+
 import NavBar from './components/NavBar';
 import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 class App extends React.Component {
-
   render() {
     return (
       <Router>
