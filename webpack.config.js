@@ -24,8 +24,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      //Add query presets to babel loader to enable JSX to work
-      { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/, query: {presets: ['react','es2015']}},
+      { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/},
       { test: /\.css$/, loader: ['style-loader', 'css-loader'] },
       { test: /\.scss$/, loader: ['style-loader', 'css-loader', 'sass-loader'] },
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader' },

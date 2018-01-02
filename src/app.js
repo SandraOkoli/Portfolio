@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './scss/style.scss';
 
 
-import NavBar from './components/NavBar';
+import NavBar from './components/utils/NavBar';
 import About from './components/About';
 import ProjectsIndex from './components/projects/ProjectsIndex';
 
