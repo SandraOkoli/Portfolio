@@ -8,8 +8,7 @@ import './scss/style.scss';
 
 import NavBar from './components/NavBar';
 import About from './components/About';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
+import ProjectsIndex from './components/projects/ProjectsIndex';
 
 class App extends React.Component {
   render() {
@@ -24,10 +23,9 @@ class App extends React.Component {
             <About/>
           </section>
           <section>
-            <Projects/>
+            <ProjectsIndex/>
           </section>
           <section>
-            <Skills/>
           </section>
         </main>
       </Router>
