@@ -18,17 +18,19 @@ class ProjectsIndex extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <h1>Projects</h1>
-        { this.state.projects.map(project =>
-          <div key={project.id}>
-            <Link to={`/projects/${project.id}`}>
-              <h3>{project.title}</h3>
-              <img src={project.image}/>
-              <button>View Project</button>
-            </Link>
-          </div>
-        )}
+        <ul>
+          { this.state.projects.map(project =>
+            <li key={project.id}>
+              <Link to={`/projects/${project.id}`}>
+                {/* <h3>{project.title}</h3> */}
+                <img className="projects-index" src={project.image}/>
+                {/* <button>View Project</button> */}
+              </Link>
+            </li>
+          )}
+        </ul>
       </div>
     );
   }

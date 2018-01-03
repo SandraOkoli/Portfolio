@@ -5,8 +5,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import './scss/style.scss';
 
-
-// import NavBar from './components/utils/NavBar';
 import Scroll from './components/utils/Scroll';
 
 class App extends React.Component {
@@ -14,12 +12,7 @@ class App extends React.Component {
     return (
       <Router>
         <main>
-          <header>
-            {/* <NavBar/> */}
-          </header>
-          <div>
-            <Scroll/>
-          </div>
+          <Scroll/>
         </main>
       </Router>
     );

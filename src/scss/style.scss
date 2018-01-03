@@ -1,5 +1,7 @@
 @import "partials/scroll";
 @import "partials/footer";
+@import "partials/projects";
+@import "partials/about";
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 li {
@@ -22,4 +24,9 @@ h1 {
   color: #fff;
   font-size: 32px;
   text-align: center;
+}
+
+.center {
+  text-align:center;
+  margin:auto;
 }
