@@ -6,9 +6,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './scss/style.scss';
 
 
-import NavBar from './components/utils/NavBar';
-import About from './components/About';
-import ProjectsIndex from './components/projects/ProjectsIndex';
+// import NavBar from './components/utils/NavBar';
+import Scroll from './components/utils/Scroll';
 
 class App extends React.Component {
   render() {
@@ -16,17 +15,11 @@ class App extends React.Component {
       <Router>
         <main>
           <header>
-            <NavBar/>
-            <h1>My Portfolio</h1>
+            {/* <NavBar/> */}
           </header>
-          <section>
-            <About/>
-          </section>
-          <section>
-            <ProjectsIndex/>
-          </section>
-          <section>
-          </section>
+          <div>
+            <Scroll/>
+          </div>
         </main>
       </Router>
     );

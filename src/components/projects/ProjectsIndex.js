@@ -1,5 +1,6 @@
 import React from 'react';
 import Axios from 'axios';
+import { Link } from 'react-router-dom';
 
 // import ProjectsShow from './components/projects/ProjectsShow';
 
@@ -18,13 +19,16 @@ class ProjectsIndex extends React.Component {
   render() {
     return (
       <div>
-        <ul>
-          <li>Muse</li>
-          <li>The Counted</li>
-          <li>Out?</li>
-          <li>GA Yearbook</li>
-          <li>Slap a doll</li>
-        </ul>
+        <h1>Projects</h1>
+        { this.state.projects.map(project =>
+          <div key={project.id}>
+            <Link to={`/projects/${project.id}`}>
+              <h3>{project.title}</h3>
+              <img src={project.image}/>
+              <button>View Project</button>
+            </Link>
+          </div>
+        )}
       </div>
     );
   }

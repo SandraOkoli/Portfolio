@@ -1,0 +1,25 @@
+@import "partials/scroll";
+@import "partials/footer";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+li {
+  list-style: none;
+  text-decoration: none;
+  float: left;
+  padding: 12px;
+}
+
+.logos {
+  img {
+   width: 150px;
+   height: 150px;
+  }
+
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+}
